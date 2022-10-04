@@ -1,7 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>René's Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body{
+    font-family: "Quicksand", sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Quicksand", sans-serif;
+    color: "#6b0303"
+}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+.tab { margin-left: 40px; }
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Top menu -->
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-right w3-padding-16">by rené baquero</div>
+        <div class="w3-center w3-padding-16">Human Computer Interaction Project 1</div>
+    </div>
+</div>
+
+<!----------- Main content ----------->
+    <div class="w3-row w3-padding-64">
+        <div class="w3-half w3-container">
+            <h1 class="w3-text-teal"  style="margin-left:40px">Using An Elevator</h1>
+            <p style="margin-left:40px">Sequence of Actions:</p>
+            <p style="margin-left:80px">1) Press up or down elevator button<br>
+                2) Elevator opens<br>
+                3) User steps in<br>
+                4) User chooses floor and presses floor button<br>
+                5) (optional) User hits the close door button for faster service<br>
+                6) Elevator moves to selected floor w/ display indicating current floor<br>
+                7) Elevator stops and user exits</p>
+        </div>
+        <div class="w3-half w3-container">
+            <p style="margin-top:20px">Common elevator usages:</p>
+            <p class="tab">- Avoiding stairs<br>
+                - Taking groceries up<br>
+                - Transporting materials on a cart<br>
+                - Traveling with a large group of people<br>
+                - Going up multiple floors<br>
+                - Moving into a hotel/apartment<br>
+                - Accessibility (wheelchair bound users)</p>
+        </div>
+    </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <img src="Elevator PNG Image Rene-Baquero.png" alt="Elevator Picture" style="width:360px" class="center">
+    </div>
+    <div class="w3-third w3-container">
+        <h1 class="w3-text-teal">Real Life Example</h1>
+        <p>Location: CS and EOC Elevator</p>
+        <p>Issues with the current design:</p>
+        <p class="tab">- Asymmetric button layout<br>
+          - Button order is not intuitive<br>
+          - Random holes on floor buttons<br>
+            - Good to have tactile feedback<br>
+            - Could be more descriptive<br>
+          - No sectioning of buttons<br>
+          - Display does not work and always says 2nd floor</p>
+          <br/>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-third w3-container">
+      <h1 class="w3-text-teal" style="margin-left:40px">New Panel Design</h1>
+      <p style="margin-left:40px">Includes:</p>
+      <p style="margin-left:80px">- Button sectioning<br>
+          - Floor Descriptions<br>
+          - Space saving button labels<br>
+      </p>
+    </div>
+    <div class="w3-twothird w3-container">
+        <img src="Elevator Digital Design.jpg" alt="Panel Sketch" style="width:360px" class="center">
+    </div>
+  </div>
+
+<!-- Footer Content -->
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>As Edited by René Baquero</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Template provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
 </body>
 </html>
